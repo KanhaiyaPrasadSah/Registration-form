@@ -1,0 +1,247 @@
+/* ===============================
+   1. MAIN WRAPPER
+================================ */
+.google-form-container {
+  background-color: #f0ebf8;
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 40px 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+/* ===============================
+   2. FORM WIDTH
+================================ */
+.centered-form {
+  width: 90%;
+  max-width: 770px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* ===============================
+   3. HEADER BAR
+================================ */
+.form-header-bar {
+  width: 100%;
+  max-width: 770px;
+  height: 10px;
+  background-color: #673ab7;
+  border-radius: 8px 8px 0 0;
+  margin-bottom: -8px;
+}
+
+/* ===============================
+   4. CARD
+================================ */
+.form-card {
+  background: #ffffff;
+  border: 1px solid #dadce0;
+  border-radius: 8px;
+  padding: 24px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* ===============================
+   5. GRID SYSTEM
+================================ */
+.grid-2, .grid-3, .grid-4 {
+  display: grid;
+  gap: 15px;
+  width: 100%;
+}
+
+/* Desktop */
+@media screen and (min-width: 1024px) {
+  .grid-2 { grid-template-columns: repeat(2, 1fr); }
+  .grid-3 { grid-template-columns: repeat(3, 1fr); }
+  .grid-4 { grid-template-columns: repeat(4, 1fr); }
+}
+
+/* Tablet */
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+  .grid-3, .grid-4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile */
+@media screen and (max-width: 767px) {
+  .grid-2, .grid-3, .grid-4 {
+    grid-template-columns: 1fr;
+  }
+
+  .form-card {
+    padding: 16px;
+  }
+}
+
+/* ===============================
+   6. INPUTS
+================================ */
+input, select, textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 6px 0;
+  border: 1px solid #dadce0;
+  border-radius: 4px;
+  background-color: #f8f9fa;
+  box-sizing: border-box;
+  font-size: 14px;
+  transition: all 0.2s ease;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border-bottom: 2px solid #673ab7;
+  background-color: #ffffff;
+}
+
+/* ===============================
+   7. CAMERA SECTION
+================================ */
+.camera-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.camera-setup,
+.preview-setup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.webcam-view {
+  width: 100%;
+  max-width: 480px;
+  border-radius: 8px;
+  border: 2px solid #673ab7;
+}
+
+/* ===============================
+   8. BUTTONS
+================================ */
+button {
+  transition: all 0.2s ease;
+}
+
+/* Capture */
+.capture-btn {
+  background-color: #673ab7;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 4px;
+  margin-top: 15px;
+  cursor: pointer;
+  font-weight: 500;
+  min-width: 150px;
+}
+
+.capture-btn:hover {
+  background-color: #5a2ea6;
+}
+
+/* Confirm + Retake */
+.confirm-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+  justify-content: center;
+}
+
+.confirm-btn {
+  background-color: #673ab7;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.confirm-btn:hover {
+  background-color: #5a2ea6;
+}
+
+.retake-btn {
+  background-color: #ffffff;
+  color: #d93025;
+  border: 1px solid #dadce0;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.retake-btn:hover {
+  background-color: #fce8e6;
+}
+
+/* Submit */
+.google-submit-btn {
+  background-color: #673ab7;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 4px;
+  font-weight: 500;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.google-submit-btn:hover {
+  background-color: #5a2ea6;
+}
+
+.google-submit-btn:disabled {
+  background-color: #bdc3c7;
+  cursor: not-allowed;
+}
+
+/* ===============================
+   9. TEXT / LABELS
+================================ */
+.section-title {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.sem-marks-header {
+  font-size: 13px;
+  font-weight: bold;
+  color: #70757a;
+  margin: 15px 0 5px 0;
+  text-transform: uppercase;
+}
+
+/* ===============================
+   10. STATUS BADGE
+================================ */
+.confirmed-badge {
+  color: #1e8e3e;
+  font-weight: bold;
+  margin-top: 10px;
+  text-align: center;
+}
+
+/* ===============================
+   11. FOOTER
+================================ */
+.footer-actions {
+  width: 100%;
+}
