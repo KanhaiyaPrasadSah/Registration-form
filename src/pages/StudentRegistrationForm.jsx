@@ -254,17 +254,7 @@ function StudentRegistrationForm() {
         </div>
       </form>
 
-      {/* Display Drive Link */}
-      {driveLink && (
-        <div className="drive-link">
-          <p>
-            📂 Uploaded Image:{" "}
-            <a href={driveLink} target="_blank" rel="noopener noreferrer">
-              View on Drive
-            </a>
-          </p>
-        </div>
-      )}
+      
     </div>
   );
 }
