@@ -220,6 +220,10 @@ function StudentRegistrationForm() {
   <option value="Sem 7">Sem 7</option>
   <option value="Sem 8">Sem 8</option>
 </select>
+<<<<<<< HEAD
+=======
+            
+>>>>>>> 760c4223d527873263510ad6cf2ae8ebc3f9d70d
             <input {...register("branch")} placeholder="Branch" />
             <input {...register("section")} placeholder="Section" />
           </div>
