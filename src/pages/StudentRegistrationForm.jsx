@@ -209,6 +209,17 @@ function StudentRegistrationForm() {
         <section className="form-card">
           <label className="section-title">Academic Details</label>
           <div className="grid-3">
+            <select {...register("yearSem")}>
+  <option value="">Select Semester</option>
+  <option value="Sem 1">Sem 1</option>
+  <option value="Sem 2">Sem 2</option>
+  <option value="Sem 3">Sem 3</option>
+  <option value="Sem 4">Sem 4</option>
+  <option value="Sem 5">Sem 5</option>
+  <option value="Sem 6">Sem 6</option>
+  <option value="Sem 7">Sem 7</option>
+  <option value="Sem 8">Sem 8</option>
+</select>
             
             <input {...register("branch")} placeholder="Branch" />
             <input {...register("section")} placeholder="Section" />
