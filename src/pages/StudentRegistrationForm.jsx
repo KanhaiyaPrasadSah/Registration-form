@@ -7,7 +7,7 @@ import axios from "axios";
 import "./StudentRegistrationForm.css";
 
 // ✅ Backend URL (FastAPI handles face vector + Apps Script forwarding)
-const BACKEND_URL = "https://kks4u-attendance-backend.hf.space/register";
+const BACKEND_URL = "https://gnitit-smart-gate-ai-backend.hf.space/register";
 
 // ================= VALIDATION SCHEMA =================
 const schema = yup.object({
@@ -220,10 +220,7 @@ function StudentRegistrationForm() {
   <option value="Sem 7">Sem 7</option>
   <option value="Sem 8">Sem 8</option>
 </select>
-<<<<<<< HEAD
-=======
-            
->>>>>>> 760c4223d527873263510ad6cf2ae8ebc3f9d70d
+
             <input {...register("branch")} placeholder="Branch" />
             <input {...register("section")} placeholder="Section" />
           </div>

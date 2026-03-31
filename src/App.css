@@ -1,4 +1,7 @@
 /* ===== TOP SWITCH BAR ===== */
+#root {
+  width: 100%;
+}
 .top-switch {
   display: flex;
   justify-content: center;

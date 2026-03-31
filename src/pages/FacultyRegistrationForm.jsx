@@ -6,7 +6,7 @@ import "./FacultyRegistrationForm.css";
 
 /* 🔥 BACKEND */
 const BACKEND_URL =
-  "https://kks4u-attendance-backend.hf.space/register";
+  "https://gnitit-smart-gate-ai-backend.hf.space/register";
 
 /* ================= COMPONENT ================= */
 const FacultyRegistrationForm = () => {
